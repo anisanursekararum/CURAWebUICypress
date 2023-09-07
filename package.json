@@ -1,0 +1,14 @@
+{
+  "name": "curawebuicypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "testCura": "npx cypress run --browser chrome --spec 'cypress/e2e/3-cura-demo/*'"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.1.0"
+  }
+}

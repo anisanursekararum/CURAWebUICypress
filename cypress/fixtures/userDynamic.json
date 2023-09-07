@@ -1,0 +1,25 @@
+{
+  "data":
+  [
+    {
+      "username": "John Doe",
+      "password": "xxxxxx"
+    },
+    {
+      "username": "xxxxx",
+      "password": "ThisIsNotAPassword"
+    },
+    {
+      "username": "John Doe",
+      "password": ""
+    },
+    {
+      "username": "",
+      "password": "ThisIsNotAPassword"
+    },
+    {
+      "username": "John Doe",
+      "password": "ThisIsNotAPassword"
+    }
+  ]
+}
