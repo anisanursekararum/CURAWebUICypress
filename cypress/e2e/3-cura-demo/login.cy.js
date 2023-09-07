@@ -7,7 +7,7 @@ describe('LOGIN', () => {
   })
 
   //using fixture data
-  it('Login Failed', () => {
+  it('Invalid Username or Password', () => {
     cy.url().should('contain', 'login')
     cy.fixture('userDynamic').its('data').then(user => {
       user.forEach((user) => {
@@ -21,12 +21,17 @@ describe('LOGIN', () => {
   })
 
   //using POM
-  it('Login Success', () => {
+  it('Valid Username And Password', () => {
     loginPage.inputUsername(data.username)
     loginPage.inputPassword(data.password)
     loginPage.clickButtton()
     loginPage.verifyLogin()
     cy.url().should('include', '/#appointment')
+  })
+
+  it('Credential Empty', () => {
+    loginPage.clickButtton()
+    cy.get('.text-danger').should('have.text', data.invalidLoginMessages)
   })
 
 })

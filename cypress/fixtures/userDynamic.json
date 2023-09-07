@@ -8,6 +8,10 @@
     {
       "username": "xxxxx",
       "password": "ThisIsNotAPassword"
+    },
+    {
+      "username": "xxxx",
+      "password": "xxxxx"
     }
   ]
 }
