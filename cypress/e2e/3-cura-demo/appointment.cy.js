@@ -24,5 +24,11 @@ describe('Appointment', () => {
     appointmentPage.confirmation()
   })
 
+  it('Mandatory Data Empty', () => {
+    appointmentPage.clickButtonBookApp()
+    cy.on('window:alert', function(alertMessages){
+      expect(alertMessages).to.contains(data.warning)
+    })
+  })
 
 })
