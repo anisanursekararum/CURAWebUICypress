@@ -28,7 +28,7 @@ describe('LOGIN', () => {
   })
   
   //using POM
-  it('C3 Valid Username And Password', () => {
+  it('C3 Valid Username And Password - Logout', () => {
     loginPage.inputUsername(data.username)
     loginPage.inputPassword(data.password)
     loginPage.clickButtton()

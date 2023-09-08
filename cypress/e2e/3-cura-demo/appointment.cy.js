@@ -14,7 +14,7 @@ describe('Appointment', () => {
     loginPage.verifyLogin()
   })
 
-  it('Book Appointment All Form Filled', () => {
+  it.only('Book Appointment All Form Filled', () => {
     appointmentPage.selectFacility()
     appointmentPage.checkCheckbox()
     appointmentPage.radioHealthCareProgram()
@@ -22,7 +22,15 @@ describe('Appointment', () => {
     appointmentPage.typeComment()
     appointmentPage.clickButtonBookApp()
     appointmentPage.confirmation()
+    appointmentPage.visitDateResult()
+    appointmentPage.commentResult()
   })
 
+  it('Mandatory Data Empty', () => {
+    appointmentPage.clickButtonBookApp()
+    cy.on('window:alert', function(alertMessages){
+      expect(alertMessages).to.contains(data.warning)
+    })
+  })
 
 })
