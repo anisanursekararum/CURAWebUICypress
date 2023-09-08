@@ -6,7 +6,22 @@ class LoginPage {
   password = '#txt-password'
   loginButton = '#btn-login'
   verify = 'h2'
-  
+  menu = '#menu-toggle'
+  loginMenu = '.sidebar-nav > :nth-child(4) > a'
+  logoutMenu = ':nth-child(6) > a'
+
+  clickMenu(){
+    cy.get(this.menu).click()
+  }
+
+  clickLoginMenu(){
+    cy.get(this.loginMenu).click()
+  }
+
+  clickLogoutMenu(){
+    cy.get(this.logoutMenu).click()
+  }
+
   inputUsername(username) {
     cy.get(this.username).type(username)
   }

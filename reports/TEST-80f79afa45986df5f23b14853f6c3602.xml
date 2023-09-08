@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="25.689" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2023-09-07T15:15:36" tests="0" file="cypress\e2e\3-cura-demo\login.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="LOGIN" timestamp="2023-09-07T15:15:36" tests="3" time="25.682" failures="0">
+    <testcase name="LOGIN C1 Invalid Username or Password" time="17.610" classname="C1 Invalid Username or Password">
+    </testcase>
+    <testcase name="LOGIN C2 Credential Empty" time="4.931" classname="C2 Credential Empty">
+    </testcase>
+    <testcase name="LOGIN C3 Valid Username And Password" time="2.934" classname="C3 Valid Username And Password">
+    </testcase>
+  </testsuite>
+</testsuites>

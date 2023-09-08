@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "testCura": "npx cypress run --browser chrome --spec 'cypress/e2e/3-cura-demo/*'"
+    "testCura": "npx cypress run --browser chrome --spec 'cypress/e2e/3-cura-demo/*'",
+    "generateReport": "npx cypress run --browser chrome --spec 'cypress/e2e/3-cura-demo/*' --reporter junit --reporter-options 'mochaFile=reports/TEST-[hash].xml'"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^13.1.0"
+  },
+  "dependencies": {
+    "cypress-testrail-all-status": "^1.0.5"
   }
 }
