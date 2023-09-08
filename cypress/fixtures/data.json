@@ -2,5 +2,14 @@
   "username": "John Doe",
   "password": "ThisIsNotAPassword",
   "invalidLoginMessages": "Login failed! Please ensure the username and password are valid.",
-  "title": "Make Appointment"
+  "title": "Make Appointment",
+  "facility1": "Tokyo CURA Healthcare Center",
+  "facility2": "Hongkong CURA Healthcare Center",
+  "facility3": "Seoul CURA Healthcare Center",
+  "program1": "Medicare",
+  "program2": "Medicaid",
+  "program3": "None",
+  "comment": "This is comment for testing",
+  "titleConfirm": "Appointment Confirmation",
+  "warning": "Please fill out this field."
 }
